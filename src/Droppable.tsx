@@ -8,7 +8,7 @@ export function Droppable({ children, name }: PropType) {
     const { ref } = useDroppable({
         id: name
     })
-    return <div ref={ref}>
-        <h1>{ name}</h1>
+    return <div ref={ref} className="border rounded">
+        <h1 className=" bg-gray-300 rounded-md">{ name}</h1>
         {children}</div>
 }

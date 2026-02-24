@@ -33,7 +33,7 @@ function App() {
   }
   return (
     <DragDropProvider onDragEnd={handledrop}>
-      <div className="flex p-4">
+      <div className="flex p-4 gap-10">
         <Droppable name="todo">
           {tasks.map((task) => {
             if (task.label === "todo") {
