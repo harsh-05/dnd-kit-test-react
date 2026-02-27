@@ -2,13 +2,17 @@ import { useDroppable } from "@dnd-kit/react"
 
 interface PropType {
     children?: React.ReactNode,
-    name: string
+    name: string,
+    id: string,
+    color: string
 }
-export function Droppable({ children, name }: PropType) {
+export function Droppable({ children, name, id, color }: PropType) {
     const { ref } = useDroppable({
-        id: name
+        id: id
     })
     return <div ref={ref} className="border rounded">
-        <h1 className=" bg-gray-300 rounded-md">{ name}</h1>
+        <h1 className={`rounded-md`}
+            style={{ backgroundColor: `${color}`} }
+        >{name}</h1>
         {children}</div>
 }

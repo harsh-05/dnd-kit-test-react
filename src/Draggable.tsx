@@ -2,11 +2,11 @@ import { useDraggable } from "@dnd-kit/react"
 
 interface Proptype {
     children: React.ReactNode,
-    name: string
+    id: string
 }
-export function Draggable({ children, name }: Proptype) {
+export function Draggable({ children, id }: Proptype) {
     const { ref } = useDraggable({
-        id: name
+        id: id
     })
     return <div ref={ref}>{children}</div>
 }
