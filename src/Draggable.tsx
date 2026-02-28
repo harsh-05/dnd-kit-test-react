@@ -8,5 +8,7 @@ export function Draggable({ children, id }: Proptype) {
     const { ref } = useDraggable({
         id: id
     })
-    return <div ref={ref}>{children}</div>
+    return <div ref={ref}
+                className="border-2 rounded-md border-black"
+            >{children}</div>
 }

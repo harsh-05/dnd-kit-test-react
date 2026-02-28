@@ -24,7 +24,7 @@ function App() {
   ];
 
   const intitalTaskStates: TaskStates[] = [
-    { id: "st-1", name: "To Do", color: "#f0f0f0" },
+    { id: "st-1", name: "To Do", color: "#f27c7c" },
     { id: "st-2", name: "In Progress", color: "#007bff" },
     { id: "st-3", name: "Completed", color: "#00ff99" },
   ];
